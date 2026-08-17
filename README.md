@@ -16,11 +16,12 @@ Using it
     node bin/csvstat.js example/cities.csv
 
     column      type    rows  empty  unique  min     max       mean       median   commonest
-    ----------  ------  ----  -----  ------  ------  --------  ---------  -------  --------------------
+    ----------  ------  ----  -----  ------  ------  --------  ---------  -------  -------------------------------
     city        text    8     0      8       len 4   len 9                         London (1)
     country     text    8     0      8       len 4   len 14                        United Kingdom (1)
     population  number  8     0      8       131136  13960000  6823940.5  8518000
     founded     number  8     0      8       -250    1535      896.5      989.5
+    notes       text    8     4      4       len 21  len 27                        Roman, originally Londinium (1)
 
 It reads standard input when given no file, or `-`:
 
